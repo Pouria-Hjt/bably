@@ -1,0 +1,76 @@
+.header {
+  width: 100% ;
+  height: 100vh;
+
+  & .section-menu {
+    width: 30rem;
+    height: 100vh;
+    @include flex(column);
+    padding: 4.5rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    @include respond(tablet) {
+      opacity: 0;
+    }
+    & .menu-text {
+      &:active ,
+      &:link {
+        text-decoration: none;
+
+      }
+    }
+    & .logo {
+      width: 12rem;
+    }
+    & a {
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+    & .bi {
+      color: $color-icons;
+      margin-left: 1rem;
+    }
+  }
+
+  & .section-info {
+    width: calc(100% - 30rem);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    @include respond(tablet) {
+      width: 100%;
+    }
+    & .info {
+      width: 20rem;
+      height: fit-content;
+      font-size: $font-primary;
+      @include flex(column);
+      align-items: center;
+      border-radius: 2rem;
+      & .row {
+        width: 100%;
+        @include flex(row);
+        font-size: 2.3rem;
+        justify-content: space-around;
+
+        & [class$="4"] {
+          color: $color-white;
+          transition: color .2s;
+          &:hover {
+            color: $color-icons;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+

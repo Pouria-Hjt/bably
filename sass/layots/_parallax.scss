@@ -1,0 +1,50 @@
+.parallax {
+  width: calc(100% - 30rem);
+  height: 100vh;
+  float: left;
+  display: inline;
+  position: relative;
+  z-index: -10;
+  @include respond(tablet) {
+    width: 100%;
+  }
+
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  & .layer {
+    display: block;
+  }
+  & .p1 {
+    @include parallaxPos(10%,10%)
+  }
+  & .p2 {
+    @include parallaxPos(10%,90%)
+  }
+  & .p3 {
+    @include parallaxPos(20%,30%)
+  }
+  & .p4 {
+    @include parallaxPos(30%,85%)
+  }
+  & .p5 {
+    @include parallaxPos(50%,25%)
+  }
+  & .p6 {
+    @include parallaxPos(70%,60%)
+  }
+  & .p7 {
+    @include parallaxPos(80%,50%)
+  }
+  & .p8 {
+    @include parallaxPos(90%,20%)
+  }
+  & .p9 {
+    @include parallaxPos(15%,50%)
+  }
+  & .p10 {
+    @include parallaxPos(90%,80%)
+  }
+}

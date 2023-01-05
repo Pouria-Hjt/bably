@@ -1,0 +1,51 @@
+@mixin flex($dir) {
+  display: flex;
+  flex-flow: $dir nowrap;
+}
+@mixin graphBefore($width , $color){
+    content: "";
+    position: absolute;
+    height: .7rem;
+    width: $width;
+    background: $color;
+    border-radius: 2.5rem;
+    top: 0;
+    right: 0;
+}
+
+@mixin cardBackGround($color) {
+  background: $color;
+  box-shadow: 0px 5px 20px 0px rgba($color ,50%);
+
+}
+
+@mixin parallaxPos($top,$left){
+  position: absolute !important;
+  top: $top !important;
+  left: $left !important;
+}
+
+// media query manager
+
+@mixin respond($breakPoint) {
+  @if $breakPoint == small-phone {
+    @media (max-width: 576px) { @content }
+  }
+
+  @if $breakPoint == phone {
+    @media (max-width: 767px) { @content }
+  }
+  @if $breakPoint == tablet {
+    @media (max-width: 1200px) { @content }
+  }
+  @if $breakPoint == small-screen {
+    @media (max-width: 1455px) { @content }
+  }
+
+  @if $breakPoint == big-screen {
+    @media (max-width: 1800px) { @content }
+  }
+  //@if $breakPoint == big-screen {
+  //  @media (max-width: 1800px) { @content }
+  //}
+}

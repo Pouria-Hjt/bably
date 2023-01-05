@@ -1,0 +1,13 @@
+.heading-secondary {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 3.7rem;
+    height: 3.7rem;
+    position: absolute;
+    top: 0;
+    right: -.6rem;
+    background: url("../images/dots-bg-light.svg");
+  }
+}

@@ -1,0 +1,148 @@
+body {
+  font-family: 'Noto Sans Arabic', sans-serif;
+
+  font-weight: 500;
+}
+
+.menu-text {
+  font-size: $font-primary;
+  color: $color-white;
+}
+.heading-primary {
+  color: $color-white;
+  letter-spacing: 3px;
+  margin-bottom: -1.5rem;
+  font-weight: 600;
+}
+
+.heading-secondary {
+  color: $color-white;
+  font-size: 3.5rem;
+
+}
+.heading-tertiary {
+  color: $color-white;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.box-1-of-2 {
+  & p {
+    color: $color-white;
+    font-size: $font-primary;
+    line-height: 2.7rem;
+    font-weight: 200;
+  }
+}
+.graph-text , .graph-percent {
+  font-size: $font-primary;
+  color: $color-white;
+}
+
+.details {
+  color: white;
+  & .bi {
+    font-size: 4rem;
+  }
+  & .detail-text-container  {
+    & .heading-tertiary {
+      font-size: 2.5rem;
+    }
+    & .detail-text {
+      font-size: $font-primary;
+
+    }
+  }
+}
+
+.card-container {
+  & .card:nth-child(2) {
+    & .card-text {
+      color: #000;
+    }
+  }
+}
+.card-text {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  text-align: center;
+  color: $color-white;
+}
+.time-container {
+  color: $color-white;
+  font-size: 1.4rem;
+
+  & .bi {
+    font-size: 2.4rem;
+    color: $color-secondary;
+  }
+}
+.experience-text {
+
+  text-align: right;
+  color: $color-white;
+  font-size: 1.5rem;
+}
+.time {
+  color: $color-primary-light;
+  font-size: 1.4rem;
+}
+.experience-card {
+  & .heading-tertiary {
+    font-size: 2.1rem;
+    font-weight: bold;
+  }
+}
+.category {
+  color: $color-white;
+  font-size: $font-primary;
+}
+.category-active {
+  color: $color-secondary;
+}
+.bi-search {
+  color: $color-white;
+  font-size: 2rem;
+}
+.price-card {
+  color: $color-white;
+  & .about {
+    font-size: $font-primary;
+  }
+  & .backup {
+    font-size: 1.8rem;
+  }
+  & .price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    & sub, sup {
+      font-size: 1rem;
+      font-weight: 200;
+
+    }
+  }
+}
+
+.notes {
+  & .heading-tertiary {
+    font-size: 1.8rem;
+  }
+  .date {
+    font-size: 1.2rem;
+    color: $color-primary-light;
+  }
+  .writer {
+    font-size: 1.4rem;
+    color: $color-secondary;
+  }
+}
+.contact-text {
+  & .text {
+    color: $color-white;
+    font-size: 1.5rem;
+
+    & a ,a:active , a:link {
+      color: $color-secondary;
+      text-decoration: none;
+    }
+  }
+}

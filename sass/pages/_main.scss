@@ -1,0 +1,554 @@
+.main {
+  width: calc(100% - 30rem);
+  height: fit-content;
+  position: absolute;
+  left: 0;
+  display: flex;
+  padding: 25rem 25rem 5rem 25rem ;
+  @include flex(column);
+
+  @include respond(tablet) {
+    padding: 5rem;
+    width: 100%;
+  }
+  @include respond(big-screen) {
+    padding: 15rem;
+  }
+  @include respond(small-screen) {
+    padding: 2rem;
+  }
+  @include respond(phone) {
+    padding: 0;
+  }
+  & .about-section {
+    width: 100%;
+    height: fit-content;
+    @include flex(column);
+    padding: 3rem;
+
+
+
+    & .about {
+      width: 100%;
+      height: 30rem;
+      @include flex(row);
+      align-items: start;
+      & .about-box {
+        width: 80%;
+        height: 100%;
+        background: $color-primary-dark;
+        padding: 2rem;
+        @include flex(row);
+        position: relative;
+        border-radius: 2rem;
+
+        &::before {
+          content: "";
+          width: 2rem;
+          height: 2rem;
+          position: absolute;
+          top: 7rem;
+          right: -1rem;
+          background-color: $color-primary-dark;
+          transform: rotateZ(45deg);
+          z-index: -1;
+        }
+
+        & .box-1-of-2 {
+          width: 50%;
+          height: 100%;
+          display: grid;
+          place-items: center;
+          grid-column-gap: 5rem;
+        }
+
+        & .box-2-of-2 {
+          width: 50%;
+          height: 80%;
+          display: grid;
+          place-items: center;
+          grid-column-gap: 5rem;
+
+          & .graph-1-of-3,
+          & .graph-2-of-3,
+          & .graph-3-of-3 {
+            width: 100%;
+            height: fit-content;
+            @include flex(column);
+
+            & .graph-text-container {
+              display: flex;
+              justify-content: space-between;
+            }
+            & .graph {
+              width: 100%;
+              height: .7rem;
+              background: white;
+              border-radius: 2.5rem;
+              position: relative;
+            }
+          }
+          & .graph-1-of-3 {
+            & .graph::before {
+              @include graphBefore(85%, $color-tertiary);
+            }
+          }
+          & .graph-2-of-3 {
+            & .graph::before {
+              @include graphBefore(95%, $color-secondary);
+            }
+          }
+          & .graph-3-of-3 {
+            & .graph::before {
+              @include graphBefore(75%, $color-purple);
+            }
+          }
+        }
+
+      }
+      @include respond(phone) {
+        flex-flow: column nowrap;
+        align-items: center;
+        height: fit-content;
+
+        & .about-box {
+          margin-top: 2rem;
+          width: 100%;
+          @include flex(column);
+          &::before {
+            top: -1rem;
+            right: 50%;
+          }
+          & .box-1-of-2 , .box-2-of-2 {
+            width: 100%;
+            padding: 1rem;
+          }
+        }
+      }
+
+    }
+
+    & .detail-container {
+      width: 100%;
+      height: fit-content;
+      @include flex(row);
+      padding: 0 .5rem;
+      @include respond(phone) {
+        flex-flow: row wrap;
+      }
+      & .details {
+        width: 20rem;
+        @include flex(row);
+
+      }
+    }
+  }
+
+  & .services-section {
+    width: 100%;
+    height: fit-content;
+    @include flex(column);
+    padding: 3rem;
+
+    & .card-container {
+      width: 100%;
+      height: fit-content;
+      @include flex(row);
+      padding: 2rem;
+
+
+      & .card {
+        width: 40rem;
+        height: 100%;
+        @include flex(column);
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 2.5rem;
+        padding: 2rem;
+        transition: all .5s;
+        &:first-child {
+          @include cardBackGround($color-purple);
+        }
+        &:nth-child(2){
+        @include cardBackGround($color-tertiary);
+        }
+        &:last-child {
+          @include cardBackGround($color-secondary);
+        }
+
+        &:not(:first-child) {
+          margin-right: 2rem;
+        }
+
+        &:hover {
+          transform: translateY(-1rem);
+
+        }
+      }
+      @include respond(phone) {
+        flex-flow: row wrap;
+
+        & .card {
+          width: 100%;
+          margin-right: 0 !important;
+          margin-top: 3rem;
+
+        }
+      }
+    }
+
+  }
+
+  & .experience-section {
+    width: 100%;
+    height: fit-content;
+    padding: 2.5rem;
+    @include flex(column);
+
+    & .experience-card-container {
+      width: 100%;
+      height: fit-content;
+      @include flex(row);
+
+
+      & .experience-card {
+        width: 45%;
+        height: fit-content;
+        background: $color-primary-dark;
+        border-radius: 2.5rem;
+        padding: 5rem;
+        &:not(:first-child) {
+          margin-right: 5rem;
+        }
+        & .time-container {
+          @include flex(row);
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: -2rem;
+        }
+      }
+      @include respond(phone) {
+        flex-flow: row wrap;
+        & .experience-card {
+          width: 100%;
+          margin-right: 0 !important;
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+
+  & .job-example-section {
+    width: 100%;
+    height: fit-content;
+    @include flex(column);
+    padding: 5rem;
+
+    & .examples-container {
+      width: 100%;
+      height: fit-content;
+      @include flex(column);
+
+      & .example-category {
+        width: 50%;
+        height: 3rem;
+        @include flex(row);
+        justify-content: space-around;
+        align-items: center;
+        cursor: pointer;
+        @include respond(phone) {
+          opacity: 0;
+        }
+        & .category-active {
+          transition: all .5s;
+        }
+      }
+
+      & .examples {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        & .examples-card {
+          width: 30rem;
+          height: 25rem;
+          margin-bottom: 1rem;
+          border-radius: 2rem;
+          position: relative;
+          overflow: hidden;
+          cursor: pointer;
+          @include respond(tablet) {
+            width: 25rem;
+            height: 20rem;
+          }
+          @include respond(big-screen) {
+            width: 25rem;
+            height: 20rem;
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            background: rgba($color-purple, .8);
+            transition: all  .5s;
+          }
+          & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 2rem;
+            z-index: -1;
+            transition: all  .5s;
+
+          }
+
+          & .card-text {
+            position: absolute;
+            top: 0;
+            right: 2rem;
+            width: fit-content;
+            height: 3rem;
+            background: #ff4c60;
+            font-size: 1.4rem;
+            padding: 0 1rem;
+            border-radius: 0 0 1rem 1rem;
+            transform: translateY(-3rem);
+            z-index: 10;
+            transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+          }
+          & .heading-tertiary {
+            position: absolute;
+            top: 5rem;
+            right: 2rem;
+            z-index: 10;
+            transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+            transform: translateY(4rem);
+            opacity: 0;
+          }
+          & .icon {
+            width: 4rem;
+            height: 4rem;
+            position: absolute;
+            bottom: 2rem;
+            right: 2rem;
+            border-radius: 50%;
+            background: $color-tertiary;
+            display: grid;
+            place-items: center;
+            z-index: 10;
+            opacity: 0;
+            transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+
+          }
+          &:hover .card-text {
+            transform: translateY(0);
+          }
+          &:hover img {
+            transform: scale(1.1);
+          }
+          &:hover::after {
+            opacity: 1;
+          }
+          &:hover .heading-tertiary {
+            transform: translateY(0);
+            opacity: 1;
+          }
+          &:hover .icon {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  & .price-card-section {
+    width: 100%;
+    height: fit-content;
+    @include flex(column);
+    padding: 3rem;
+
+    & .price-card-container {
+      width: 100%;
+      height: fit-content;
+      @include flex(row);
+      justify-content: center;
+      & .price-card {
+        width: 33%;
+        height: 100%;
+        background: $color-primary-dark;
+        border-radius: 2.5rem;
+        padding: 0 3rem ;
+        @include flex(column);
+        align-items: center;
+        justify-content: space-around;
+
+        &:nth-child(2) {
+          height: 50rem;
+        }
+        &:last-child , &:first-child {
+          margin-top: 2.5rem;
+        }
+        &  .price-image {
+          height: 8rem;
+        }
+      }
+      @include respond(phone) {
+        flex-flow: row wrap;
+
+        & .price-card {
+          width: 100%;
+          height: 40rem;
+          margin-top: 2rem!important;
+        }
+      }
+
+    }
+  }
+
+  & .recent-note-section {
+    width: 100%;
+    height: fit-content;
+    @include flex(column);
+    padding: 3rem;
+
+    & .notes-container {
+      width: 100%;
+      height: fit-content;
+      @include flex(row);
+      justify-content: space-around;
+      align-items: center;
+
+
+        & .notes {
+        width: 33rem;
+        height: 32rem;
+        background: $color-primary-dark;
+        border-radius: 2.5rem;
+        overflow: hidden;
+        position: relative;
+        transition: all .5s;
+        @include respond(big-screen) {
+          width: 28rem;
+          height: 26rem;
+        }
+
+        & .note-img {
+          width: 100%;
+          height: 65%;
+          position: absolute;
+          top: 0;
+          object-fit: cover;
+        }
+        & .heading-tertiary {
+          position: absolute;
+          top: 65%;
+          transition: all .5s;
+          cursor: pointer;
+
+          &:hover {
+            color: $color-secondary;
+          }
+        }
+        & .date {
+          position: absolute;
+          bottom: 2rem;
+          right: 2rem;
+        }
+        & .writer {
+          position: absolute;
+          bottom: 2rem;
+          left: 4rem;
+          transition: all .5s;
+          cursor: pointer;
+          &:hover {
+            color: $color-white;
+          }
+        }
+        &:hover {
+          transform: translateY(-1rem);
+        }
+      }
+      @include respond(phone) {
+        flex-flow: row wrap;
+        & .notes {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+
+  & .contact-me-section {
+    width: 100%;
+    height: fit-content;
+    @include flex(column);
+    padding: 3rem;
+
+    & .contact-form-container {
+      width: 100%;
+      height: fit-content;
+      @include flex(row);
+
+      & .contact-text {
+        height: 100%;
+        width: 25%;
+      }
+
+      & .contact-form {
+        height: 100%;
+        width: 80%;
+        padding: 2rem;
+        @include flex(column);
+
+        & .input {
+          width: 90%;
+          height: 6rem;
+          border-radius: 3rem;
+          padding: 1rem;
+          font-size: 2rem;
+          outline: none;
+          border: none;
+          margin-bottom: 1rem;
+        }
+        & .message {
+          width: 90%;
+          height: 15rem;
+          padding: 1rem;
+          font-size: 2rem;
+          border-radius: 3rem;
+          outline: none;
+          margin-bottom: 1rem;
+
+        }
+      }
+      @include respond(phone) {
+        flex-flow: column nowrap;
+
+        & .contact-text {
+          width: 100%;
+        }
+        & .contact-form {
+          width: 100%;
+
+          & .input {
+            width: 100%;
+            height: 3rem;
+            font-size: 1.5rem;
+          }
+          & .message {
+            width: 100%;
+            font-size: 1.5rem;
+
+          }
+        }
+      }
+
+    }
+  }
+}
+

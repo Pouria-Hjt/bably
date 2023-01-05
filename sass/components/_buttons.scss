@@ -1,0 +1,23 @@
+.button-primary {
+  &:visited,
+  &:active,
+  &:link {
+    text-decoration: none;
+    color: $color-white;
+    width: 15rem;
+    height: 4rem;
+    display: grid;
+    place-items: center;
+    background: $color-secondary;
+    border-radius: 2.5rem;
+    position: relative;
+    font-size: $font-primary;
+    margin-top: 1rem;
+  }
+
+
+  &:hover {
+    animation: fadeInOut .3s ease-in;
+
+  }
+}
