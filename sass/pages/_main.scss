@@ -379,17 +379,19 @@
       @include flex(row);
       justify-content: center;
       & .price-card {
-        width: 33%;
-        height: 100%;
+        width: 35rem;
+        height: 40rem;
         background: $color-primary-dark;
         border-radius: 2.5rem;
-        padding: 0 3rem ;
+        padding: 2rem 3rem ;
         @include flex(column);
         align-items: center;
         justify-content: space-around;
 
         &:nth-child(2) {
           height: 50rem;
+          margin-left: 1rem;
+          margin-right: 1rem;
         }
         &:last-child , &:first-child {
           margin-top: 2.5rem;

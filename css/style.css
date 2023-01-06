@@ -175,7 +175,7 @@ body {
   display: inline;
   position: relative;
   z-index: -10; }
-  @media (max-width: 1200px) {
+  @media (min-width: 768px) and (max-width: 1200px) {
     .parallax {
       width: 100%; } }
   .parallax::after {
@@ -239,7 +239,7 @@ body {
     top: 0;
     right: 0;
     bottom: 0; }
-    @media (max-width: 1200px) {
+    @media (min-width: 768px) and (max-width: 1200px) {
       .header .section-menu {
         opacity: 0; } }
     .header .section-menu .menu-text:active, .header .section-menu .menu-text:link {
@@ -260,7 +260,7 @@ body {
     position: absolute;
     left: 0;
     top: 0; }
-    @media (max-width: 1200px) {
+    @media (min-width: 768px) and (max-width: 1200px) {
       .header .section-info {
         width: 100%; } }
     .header .section-info .info {
@@ -293,14 +293,14 @@ body {
   padding: 25rem 25rem 5rem 25rem;
   display: flex;
   flex-flow: column nowrap; }
-  @media (max-width: 1200px) {
+  @media (min-width: 768px) and (max-width: 1200px) {
     .main {
       padding: 5rem;
       width: 100%; } }
-  @media (max-width: 1800px) {
+  @media (min-width: 1456px) and (max-width: 1800px) {
     .main {
       padding: 15rem; } }
-  @media (max-width: 1455px) {
+  @media (min-width: 1201px) and (max-width: 1455px) {
     .main {
       padding: 2rem; } }
   @media (max-width: 767px) {
@@ -537,11 +537,11 @@ body {
           position: relative;
           overflow: hidden;
           cursor: pointer; }
-          @media (max-width: 1200px) {
+          @media (min-width: 768px) and (max-width: 1200px) {
             .main .job-example-section .examples-container .examples .examples-card {
               width: 25rem;
               height: 20rem; } }
-          @media (max-width: 1800px) {
+          @media (min-width: 1456px) and (max-width: 1800px) {
             .main .job-example-section .examples-container .examples .examples-card {
               width: 25rem;
               height: 20rem; } }
@@ -620,17 +620,19 @@ body {
       flex-flow: row nowrap;
       justify-content: center; }
       .main .price-card-section .price-card-container .price-card {
-        width: 33%;
-        height: 100%;
+        width: 35rem;
+        height: 40rem;
         background: #302F4E;
         border-radius: 2.5rem;
-        padding: 0 3rem;
+        padding: 2rem 3rem;
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
         justify-content: space-around; }
         .main .price-card-section .price-card-container .price-card:nth-child(2) {
-          height: 50rem; }
+          height: 50rem;
+          margin-left: 1rem;
+          margin-right: 1rem; }
         .main .price-card-section .price-card-container .price-card:last-child, .main .price-card-section .price-card-container .price-card:first-child {
           margin-top: 2.5rem; }
         .main .price-card-section .price-card-container .price-card .price-image {
@@ -663,7 +665,7 @@ body {
         overflow: hidden;
         position: relative;
         transition: all .5s; }
-        @media (max-width: 1800px) {
+        @media (min-width: 1456px) and (max-width: 1800px) {
           .main .recent-note-section .notes-container .notes {
             width: 28rem;
             height: 26rem; } }

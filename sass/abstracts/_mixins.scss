@@ -36,14 +36,14 @@
     @media (max-width: 767px) { @content }
   }
   @if $breakPoint == tablet {
-    @media (max-width: 1200px) { @content }
+    @media (min-width: 768px) and (max-width: 1200px) { @content }
   }
   @if $breakPoint == small-screen {
-    @media (max-width: 1455px) { @content }
+    @media (min-width: 1201px) and (max-width: 1455px) { @content }
   }
 
   @if $breakPoint == big-screen {
-    @media (max-width: 1800px) { @content }
+    @media (min-width: 1456px) and (max-width: 1800px) { @content }
   }
   //@if $breakPoint == big-screen {
   //  @media (max-width: 1800px) { @content }
