@@ -8,6 +8,9 @@
   @include respond(tablet) {
     width: 100%;
   }
+  @include respond(phone) {
+    width: 100%;
+  }
 
   &::after {
     content: "";

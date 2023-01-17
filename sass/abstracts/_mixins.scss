@@ -45,7 +45,4 @@
   @if $breakPoint == big-screen {
     @media (min-width: 1456px) and (max-width: 1800px) { @content }
   }
-  //@if $breakPoint == big-screen {
-  //  @media (max-width: 1800px) { @content }
-  //}
 }

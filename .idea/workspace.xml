@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="09ff6c97-7f82-487e-88ad-5ff8186ae8bf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/abstracts/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/abstracts/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/layots/_parallax.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layots/_parallax.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/pages/_home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/pages/_home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/pages/_main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/pages/_main.scss" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="SCSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2JbGOjkDKJCzWsoiKdYmi2WzsM8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/ALPHA/Desktop/surces/Websites/examination/html-css/bolby",
+    "list.type.of.created.stylesheet": "SCSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "discord-application",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="09ff6c97-7f82-487e-88ad-5ff8186ae8bf" name="Changes" comment="" />
+      <created>1672339338263</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1672339338263</updated>
+      <workItem from="1672339339402" duration="387000" />
+      <workItem from="1672339781359" duration="5000" />
+      <workItem from="1672340395191" duration="13419000" />
+      <workItem from="1672513867728" duration="467000" />
+      <workItem from="1672514347745" duration="1019000" />
+      <workItem from="1672515795440" duration="1068000" />
+      <workItem from="1672517762508" duration="1071000" />
+      <workItem from="1672561797518" duration="4682000" />
+      <workItem from="1672579321821" duration="7138000" />
+      <workItem from="1672682282268" duration="2187000" />
+      <workItem from="1672684499080" duration="3123000" />
+      <workItem from="1672748780272" duration="980000" />
+      <workItem from="1672749778264" duration="6906000" />
+      <workItem from="1672769697894" duration="27837000" />
+      <workItem from="1672867546678" duration="98000" />
+      <workItem from="1672951349403" duration="4215000" />
+      <workItem from="1673017904370" duration="6056000" />
+      <workItem from="1673024306313" duration="831000" />
+      <workItem from="1673367300356" duration="641000" />
+      <workItem from="1673368553500" duration="771000" />
+      <workItem from="1673388919889" duration="616000" />
+      <workItem from="1673417504665" duration="50000" />
+      <workItem from="1673954482610" duration="1473000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

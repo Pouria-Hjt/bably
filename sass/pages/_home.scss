@@ -15,6 +15,10 @@
     @include respond(tablet) {
       opacity: 0;
     }
+    @include respond(phone) {
+      opacity: 0;
+    }
+
     & .menu-text {
       &:active ,
       &:link {
@@ -48,6 +52,10 @@
     @include respond(tablet) {
       width: 100%;
     }
+    @include respond(phone) {
+      width: 100%;
+    }
+
     & .info {
       width: 20rem;
       height: fit-content;
